@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Stack } from "@mui/system";
 
-import MainContent from "../components/content/MainInfo";
+import MainInfo from "../components/content/MainInfo";
 import SideInfo from "../components/content/SideInfo";
 import SwiperMatches from "../components/content/SwiperMatches";
 import ListPlayers from '../components/content/ListPlayers';
@@ -17,7 +17,7 @@ const MatchesPage = () => {
       <Container>
         <Stack direction="row" gap="0 10px">
           <SideInfo />
-          <MainContent />
+          <MainInfo />
           <ListPlayers />
         </Stack>
       </Container>
