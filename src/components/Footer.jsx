@@ -68,8 +68,11 @@ const ListOrder = Styled.div`
 `;
 
 const ListItem = Styled.p`
-    font-weight: bold;
-    font-size: 14px;
+  font-weight: bold;
+  font-size: 14px;
+  @media screen and (max-width: 992px) {
+    font-size: 11px;
+  }
 `;
 
 const ContainerSocialContent = Styled.div`
@@ -84,7 +87,11 @@ const ContainerSocialContent = Styled.div`
 const SocialImg = Styled.img`
   width: 40px ;
   height: 40px;
-  `;
+  @media screen and (max-width: 768px) {
+    width: 26px;
+    height: 34px;
+  }
+`;
 
 const LineEndStyle = Styled.div`
 border-top: 1px solid rgba(204, 204, 204, 1);
@@ -92,7 +99,10 @@ border-top: 1px solid rgba(204, 204, 204, 1);
 `;
 
 const ListLastItem = Styled.p`
-        font-size: 13px;
+  font-size: 13px;
+  @media screen and (max-width: 992px) {
+    font-size: 9px
+  }
 `;
 
 const CopyRight = Styled.div`
