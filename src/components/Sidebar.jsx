@@ -11,12 +11,13 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import MenuImage from "../img/Icon feather-menu.png";
-import { IconButton } from "@mui/material";
+import { IconButton, SpeedDial, SpeedDialIcon } from "@mui/material";
 import { AccountCircle } from "@mui/icons-material";
 import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
 import { Stack } from "@mui/system";
 import Sport from "../img/Sport.png";
+import CloseIcon from '@mui/icons-material/Close';
 
 function Sidebar({ mobileBar, setMobileBar }) {
   const [state, setState] = React.useState({
@@ -66,7 +67,7 @@ function Sidebar({ mobileBar, setMobileBar }) {
             <Link to="sa">مقال</Link>
           </li>
           <li>
-            <Link to="sa">دوليات</Link>{" "}
+            <Link to="sa">دوليات</Link>
           </li>
           <li>
             <Link to="sa">متابعات</Link>
@@ -109,6 +110,11 @@ function Sidebar({ mobileBar, setMobileBar }) {
               onClose={toggleDrawer(anchor, false)}
             >
               {list(anchor)}
+                <SpeedDial
+                onClick={toggleDrawer(anchor, false)}
+                  ariaLabel="SpeedDial openIcon example"
+                  icon={<SpeedDialIcon openIcon={<CloseIcon />} />}>
+              </SpeedDial>
             </Drawer>
           </React.Fragment>
         ))}
