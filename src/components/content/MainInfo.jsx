@@ -18,7 +18,8 @@ const MainInfo = ({ Player }) => {
     <Box flex="3.1">
       <Box className="player">
         <Stack color="#fff">
-          <img src="https://via.placeholder.com/70" alt="" />
+          <img src="https://via.placeholder.com/70"
+          width={value === '30px' ? "40px" : "70px" } alt="" />
           <Typography variant="h5">الدوري الممتاز</Typography>
           <Stack
             width="96%"
