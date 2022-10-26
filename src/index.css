@@ -127,6 +127,7 @@ ul {
   position: relative;
   z-index: 1;
 }
+
 .player::before {
   content: "";
   background: linear-gradient(to top, #3D195B, #3D195B);
@@ -149,15 +150,24 @@ ul {
   height: 100%;
   justify-content: center;
 }
-
+@media screen and (max-width: 768px) {
+  .MuiBox-root.css-266l6f {
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+}
 .MuiList-root.MuiList-padding.css-h4y409-MuiList-root {
   padding: 0;
   color: #4d4d4d;
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    width: 100%
+  }
   .player {
     height: 180px;
+    width: 100%;
   }
 }
 
@@ -169,6 +179,17 @@ tr {
   border-spacing: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 13px !important;
+  }
+  th, td {
+    padding: 3px !important;
+  }
+  img {
+    object-fit: contain;
+  }
+}
 /* Start Swiper */
 .mainSwiperComponent {
   height: 170px;
@@ -210,6 +231,20 @@ tr {
   border: #333 1px solid;
 }
 
+@media screen and (max-width: 768px) {
+  .topSwiper > button {
+    padding: 4px 12px;
+    font-size: 12px;
+  }
+  .topSwiper div button {
+    font-size: 12px;
+  }
+  .css-1oqqzyl-MuiContainer-root {
+    width: 100%;
+    padding: 0 !important;
+  }
+}
+
 .mySwiper {
   width: 100%;
   height: 75%;
@@ -228,4 +263,13 @@ tr {
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
   color: rgb(218, 218, 218);
   font-size: 17px;
+}
+.link- {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .link- svg {
+    display: none;
+  }
 }
