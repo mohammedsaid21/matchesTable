@@ -22,7 +22,7 @@ const RangeTeamsGoals = () => {
 
 
   return (
-      <Box sx={{ width: "100%", typography: "body1", background: "#F7F7F7" }}>
+      <Box sx={{ width: "50%", margin: "80px auto" , typography: "body1", background: "#F7F7F7" }}>
         <TabContext value={value}>
           <Box
             sx={{
