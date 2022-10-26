@@ -52,20 +52,20 @@ const SwiperMatches = () => {
   const changeData = (type, index) => {
     setTypeApi(type)
     for(let i = 0; i < 3; i++) {
-      // console.log(btns.current.children[i].classList)
       btns.current.children[i].classList.remove("active")
     }
     btns.current.children[index - 1].classList.add("active")
   }
 
 
-  const matches = useMediaQuery('(max-width:768px)');
+  const matches = useMediaQuery('(min-width:1200px)');
+  const matches_mobile = useMediaQuery('(max-width:768px)');
   const [valueSlide, setValueSlide] = useState(4)
 
-  useEffect(() => {
-    if(matches) setValueSlide(2)
-    else setValueSlide(4)
-  }, [matches])
+  // useEffect(() => {
+  //   if(matches) setValueSlide(1)
+  //   else setValueSlide(4)
+  // }, [matches])
   
 
   return (
@@ -80,7 +80,7 @@ const SwiperMatches = () => {
       </Box>
 
       <Swiper
-        slidesPerView={valueSlide}
+        slidesPerView={matches ?  4 :  matches_mobile ? 1 : 2}
         spaceBetween={0}
         freeMode={true}
         navigation={true}
