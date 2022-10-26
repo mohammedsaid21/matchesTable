@@ -1,5 +1,6 @@
-import { Typography } from '@mui/material';
-import * as React from 'react';
+import { Typography, useMediaQuery } from '@mui/material';
+import React from "react";
+
 // import Styled from '@emotion/styled';
 
 function TableData() {
@@ -7,8 +8,7 @@ function TableData() {
   // let array = new Array(50);
 
   let array = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-
-
+  
   return (
     <div style={{ width: '100%', marginBottom: '2rem' }}>
       <Typography variant='h5' padding="20px 0 10px">البرتغال</Typography>
