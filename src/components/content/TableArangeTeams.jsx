@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Typography, useMediaQuery } from '@mui/material';
 import * as React from 'react';
 // import Styled from '@emotion/styled';
 
@@ -10,6 +10,7 @@ function TableArangeTeams() {
 
   let array = [1,2,3,4,5,6,7,8,9,10]
 
+  const matches = useMediaQuery("(max-width:450px)");
 
   return (
     <div style={{ width: '100%', marginBottom: '2rem' }}>
@@ -68,8 +69,8 @@ function TableArangeTeams() {
             >
               <td style={{ padding: 10 }}>{e}</td>
               <td style={{ padding: 10, fontSize: "19px", display: 'flex', alignItems: "center" }}>
-                <img src={Madrid} width="34px" height="34px" style={{ marginLeft: "10px", objectFit: "contain" }} alt="" />
-                <Typography variant='h6'>Real Madrid</Typography>
+                <img src={Madrid} width={matches ? "28px" : "34px" } height={matches ? "28px" : "34px" } style={{ marginLeft: "10px", objectFit: "contain" }} alt="" />
+                <Typography variant='h6' fontSize={matches ? "14px" : "20px" }>Real Madrid</Typography>
                 </td>
               <td style={{ padding: 10 }}>51</td>
               <td style={{ padding: 10 }}>5</td>
