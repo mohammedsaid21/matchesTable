@@ -1,7 +1,10 @@
 import { Box, List, Typography, useMediaQuery } from '@mui/material'
 import { Stack, width } from '@mui/system'
 import React, { useEffect, useState } from 'react'
+
+
 import Lego from "../../img/lego.png"
+
 
 const SideInfo = () => {
   const matches = useMediaQuery('(max-width:1000px)');
@@ -23,6 +26,7 @@ const SideInfo = () => {
         )}
       </List>
       <img style={{ marginTop: "25px", objectFit: "contain", width: "300px", height: "600px" }} src="https://via.placeholder.com/300X600/#DFE6FA" alt="" />
+
     </Box>
   )
 }
