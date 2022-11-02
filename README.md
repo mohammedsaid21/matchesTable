@@ -3,8 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-<img src="./image/cover img/player.jpg" alt="" />
-<img src="./image/cover img/match.jpg" alt="" />
+<img src="./image/cover_img/player.jpg" alt="" />
+<img src="./image/cover_img/match.jpg" alt="" />
 
 
 ## Available Scripts
