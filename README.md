@@ -4,8 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 <div>
-  <img src="./img/cover_img/player.jpg" alt="" />
-  <img src="./img/cover_img/match.jpg" alt="" />
+  <img src="./src/img/cover_img/player.jpg" alt="" />
+  <img src="./src/img/cover_img/match.jpg" alt="" />
 </div>
 
 ## Available Scripts
